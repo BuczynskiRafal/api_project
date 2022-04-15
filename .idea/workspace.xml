@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dcd43fc-db11-4869-811f-5def55dc61fb" name="Changes" comment="" />
+    <list default="true" id="2dcd43fc-db11-4869-811f-5def55dc61fb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_app/factories.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_app/management/commands/create_users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_app/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_app/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +21,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -30,13 +41,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="exceleditor.install" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../training" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "exceleditor.install": "true",
+    "last_opened_file_path": "/home/rafal/Dokumenty/projects/api_project"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -48,7 +59,7 @@
       <recent name="$PROJECT_DIR$/api_app" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in tests.py">
+  <component name="RunManager" selected="Python.manage">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="api_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,10 +146,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.manage" />
         <item itemvalue="Python tests.Python tests in tests.py" />
         <item itemvalue="Python tests.Python tests for api_app.tests.AnnualEnterpriseSurveyTestCase.test_object_create" />
         <item itemvalue="Python tests.Python tests for api_app.tests.AnnualEnterpriseSurveyTestCase.test_object_was_created" />
-        <item itemvalue="Python.manage" />
         <item itemvalue="Python tests.Python tests for api_app.tests.test_csv_to_db" />
       </list>
     </recent_temporary>
@@ -153,5 +164,16 @@
       <updated>1649682947308</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

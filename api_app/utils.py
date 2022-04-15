@@ -2,18 +2,19 @@ import os
 import csv
 import sqlite3
 from pathlib import Path
+from .factories import UserFactory
 
-from .models import AnnualEnterpriseSurvey
-
+from .models import AnnualEnterpriseSurvey, User
+from .factories import UserFactory
 
 # BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 def csv_to_db(csv_path, header_rows):
     """Create data in annual_enterprise_survey_2020 table from csv file."""
 
     with open(csv_path) as csv_file:
         reader = csv.reader(csv_file)
-        counter = 0
         for row in reader:
             try:
                 created = AnnualEnterpriseSurvey.objects.get_or_create(
@@ -30,11 +31,9 @@ def csv_to_db(csv_path, header_rows):
                     error_file.write(str(row) + '\n')
 
 
+def create_users(n=1000):
+    """Create users"""
+    for _ in range(n):
+        user = UserFactory()
+        user.save()
 
-# dopisać obsługę wyjątków - błędne dane zapisywane do nowego pliku
-# dopisac testy do csv_to_db - zrobione
-# test sprawdzający czy rekord dodał się do bazy - zrobione na orm django
-# sprawdizć coverage utils.py - sprawdzono
-# dopracować pobieranie danych bez nagłówka - pomysleć jak uogólnić
-# (przyjmowanie pliku jako argument i ilść wierszy nagłówka jakie trzeba opuścić jako argument) - zrobione
-# testowanie wielowątkowości - symulowanie ludzi którzy chcą się zapisac do bazy - wiele wątków
