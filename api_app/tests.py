@@ -2,7 +2,10 @@ from sqlite3 import connect
 from django.test import TestCase
 
 from .models import AnnualEnterpriseSurvey
-from .utils import csv_to_db
+from django.contrib.auth.models import User
+from .factories import UserFactory
+from .utils import csv_to_db, generate_users, create_users
+
 
 
 class AnnualEnterpriseSurveyTestCase(TestCase):
@@ -72,10 +75,4 @@ class AnnualEnterpriseSurveyTestCase(TestCase):
         self.connection.close()
 
 
-
-# for row in test_annual_enterprise_survey_data:
-#     to_db = [row[0], row[1], row[2], row[3], row[4], row[5], row[6]]
-#
-#     insert_sql = "INSERT INTO test_annual_enterprise_survey (year, industry_code_ANZSIC, industry_name_ANZSIC, rme_size_grp, variable, value, unit) VALUES (?, ?, ?, ?, ?, ?, ?);"
-#     self.cursor.execute(insert_sql, to_db)
-#     self.connection.commit()
+# class CreateUsersTestCase:

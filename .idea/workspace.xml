@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dcd43fc-db11-4869-811f-5def55dc61fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_app/factories.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_app/management/commands/create_users.py" afterDir="false" />
+    <list default="true" id="2dcd43fc-db11-4869-811f-5def55dc61fb" name="Changes" comment="generate users in multiple threads">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_app/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_app/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_app/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_app/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +38,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "exceleditor.install": "true",
-    "last_opened_file_path": "/home/rafal/Dokumenty/projects/api_project"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;exceleditor.install&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/rafal/Dokumenty/projects/api_project&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -163,6 +160,21 @@
       <option name="presentableId" value="Default" />
       <updated>1649682947308</updated>
     </task>
+    <task id="LOCAL-00001" summary="create users factory">
+      <created>1650028043006</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650028043006</updated>
+    </task>
+    <task id="LOCAL-00002" summary="generate users in multiple threads">
+      <created>1650029421322</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650029421322</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,5 +187,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create users factory" />
+    <MESSAGE value="generate users in multiple threads" />
+    <option name="LAST_COMMIT_MESSAGE" value="generate users in multiple threads" />
   </component>
 </project>

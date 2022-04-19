@@ -34,13 +34,6 @@ def csv_to_db(csv_path, header_rows):
                     error_file.write(str(row) + '\n')
 
 
-# def create_users(n=1000):
-#     """Create users"""
-#     for _ in range(n):
-#         user = UserFactory()
-#         user.save()
-
-
 def generate_users(n):
     """Generate users"""
     for _ in range(n):
@@ -54,7 +47,7 @@ def generate_users(n):
 def create_users(n=100):
 
     """Create threads"""
-    threads = [Thread(target=generate_users, args=(n,)) for _ in range(5)]
+    threads = [Thread(target=generate_users, args=(n,)) for _ in range(4)]
 
     """t0 - will be used to calculate how long the function work"""
     t0 = datetime.datetime.now()
@@ -66,5 +59,5 @@ def create_users(n=100):
     [t.join() for t in threads]
 
     dt = datetime.datetime.now() - t0
-    print(colorama.Fore.GREEN + f"Working time: {dt.total_seconds():,.2f} sec.")
+    print(colorama.Fore.WHITE + f"Working time: {dt.total_seconds():,.2f} sec.")
 
